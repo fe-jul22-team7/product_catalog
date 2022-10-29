@@ -4,17 +4,18 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "lint": "eslint ./src --fix --color",
-    "prepare": "cd .. && husky install ./server/.husky"
+    "lint": "eslint . --ignore-path .gitignore --fix --color",
+    "fix-style": "npm run lint -- --fix",
+    "prepare": "cd .. && husky install ./product_catalog_server/.husky"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "eslint": "^8.26.0",
     "husky": "^8.0.1",
-    "eslint-config-airbnb-base": "^15.0.0",
-    "eslint-config-node": "^4.1.0",
-    "eslint-plugin-node": "^11.1.0"
+    "lint-staged": "^13.0.3"
+  },
+  "lint-staged": {
+    "*.js": "npm run lint"
   }
 }
