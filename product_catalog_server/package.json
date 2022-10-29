@@ -4,9 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "lint": "eslint . --ignore-path .gitignore --fix --color",
-    "fix-style": "npm run lint -- --fix",
-    "prepare": "cd .. && husky install ./product_catalog_server/.husky"
+    "lint": "eslint ./src --fix --color",
+    "prepare": "husky install"
   },
   "author": "",
   "license": "ISC",
