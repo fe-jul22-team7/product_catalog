@@ -28,8 +28,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "format": "prettier --write . --ignore-path .gitignore",
-    "lint": "eslint . --ignore-path .gitignore --fix --color",
-    "fix-style": "npm run format && npm run lint",
+    "lint": "eslint ./src --fix --color",
     "prepare": "cd .. && husky install ./product_catalog_client/.husky"
   },
   "eslintConfig": {

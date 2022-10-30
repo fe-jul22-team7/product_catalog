@@ -32,6 +32,7 @@
     "@typescript-eslint/semi": ["error", "always"],
     "prefer-const": 2,
     "curly": [2, "all"],
+    "quotes": ["error", "single"],
     "max-len": [
       "error",
       {
