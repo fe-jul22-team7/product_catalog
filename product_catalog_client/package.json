@@ -22,15 +22,15 @@
   },
   "scripts": {
     "predeploy": "npm run build",
-    "deploy":"gh-pages -d build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "format": "prettier --write .",
     "format:check": "prettier --check .",
-    "prepare": "husky install",
-    "lint": "eslint ./src --fix --color"
+    "lint": "eslint ./src --fix --color",
+    "prepare": "cd .. && husky install ./product_catalog_client/.husky"
   },
   "eslintConfig": {
     "extends": [
