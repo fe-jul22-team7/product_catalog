@@ -1,0 +1,15 @@
+.navbar {
+  height: 64px;
+  display: block;
+  &-item {
+    color: #0F0F11;
+    font-family: 'Mont';
+font-style: normal;
+font-weight: 800;
+font-size: 12px;
+line-height: 11px;
+text-transform: uppercase;
+text-decoration: none;
+margin-right: 64px;
+  }
+}

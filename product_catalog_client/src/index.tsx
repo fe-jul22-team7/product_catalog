@@ -1,15 +1,14 @@
-import ReactDOM from 'react-dom/client';
-import { HashRouter as Router } from 'react-router-dom';
-import App from './App';
+import { createRoot } from 'react-dom/client';
+import { HashRouter } from 'react-router-dom';
 
-const Root = () => (
-  <Router>
-    <App />
-  </Router>
-);
+import '@fortawesome/fontawesome-free/css/all.css';
+import { App } from './App';
 
-const root = ReactDOM.createRoot(
-  document.getElementById('root') as HTMLElement,
-);
 
-root.render(<Root />);
+
+createRoot(document.getElementById('root') as HTMLDivElement)
+  .render(
+    <HashRouter>
+      <App />
+    </HashRouter>,
+  );
