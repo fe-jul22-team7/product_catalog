@@ -1,0 +1,54 @@
+.footer {
+  background: #fff;
+  padding: 34px 0px 32px 16px;
+  margin: 0;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  &__logo {
+    width: 89px;
+    height: 30px;
+    margin-bottom: 32px;
+  }
+
+  &__nav {
+    margin-bottom: 40px;
+  }
+
+  &__nav-list {
+    padding: 0;
+    margin: 0;
+  }
+
+  &__nav-item {
+    list-style-type: none;
+    margin-bottom: 16px;
+  }
+
+  &__nav-link {
+    text-decoration: none;
+    color: #89939A;
+    font-family: 'Mont', Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 12px;
+    line-height: 11px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+  }
+
+  &__backToTop-btn {
+    display: block;
+    
+    text-decoration: none;
+    color: #89939A;
+    font-family: 'Mont';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 15px;
+    text-align: center;
+  }
+}
