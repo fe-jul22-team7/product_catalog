@@ -1,0 +1,10 @@
+.header {
+  display:flex;
+  gap: 50px;
+  
+
+  &_logo {
+    display: block;
+    margin-right: 50px;
+  }
+}
