@@ -3,7 +3,6 @@ import './Navbar.scss';
 
 export const Navbar = () => (
   <nav
-    data-cy="nav"
     className="navbar"
     role="navigation"
     aria-label="main navigation"

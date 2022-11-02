@@ -1,8 +1,18 @@
+@import "../../utils/mixins";
+
 .navbar {
+  display: none;
+
+  @include onTablet {
+    display: flex;
+  }
+
+  @include onDesktop {
+    display: flex;      
+  }
   
   &-brand {
     display: flex;
     gap: 64px;
   }
- 
 }

@@ -1,16 +1,17 @@
+@import "../../utils/mixins";
+
 .header {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
   border: 1px solid #E2E6E9;
+  justify-content: space-between;
 
-
-  &_block-logo-nav {
+ 
+  &__block-logo-nav {
     display:flex;
    
   }
 
-  &_logo {
+  &__logo {
     display: block;
     margin-right: 48px;
     margin-left: 24px;
@@ -31,15 +32,38 @@
     }
   }
 
-  &_block-user {
-    display:flex;
+ 
+
+  &__block-user {
     border-left: 1px solid #E2E6E9;
+    display: none;
+   
+    @include onTablet {
+      display: flex;      
+    }
+
+    @include onDesktop {
+      display: flex;      
+    }
   }
 
-  &_user-item {
+  &__user-item {
     width: 16px;
     height: 16px;
     padding: 24px 23px;
     border-right: 1px solid #E2E6E9;
+  }
+
+  &__button-menu {
+    display: flex;
+    align-items: center;
+    padding: 16px;
+   
+    @include onTablet {
+      display: none;      
+    }
+    @include onDesktop {
+      display: none;        
+    }
   }
 }
