@@ -10,7 +10,7 @@ export const Navbar = () => (
   >
     <div className="container">
       <div className="navbar-brand">
-        <PageNavLink to="/" text="Home" />
+        <PageNavLink to="/" text="Home"/>
         <PageNavLink to="/phones" text="Phones" />
         <PageNavLink to="/tablets" text="Tablets" />
         <PageNavLink to="/accessories" text="Accessories" />

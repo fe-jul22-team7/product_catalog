@@ -1,15 +1,36 @@
 .navbar {
-  height: 64px;
-  display: block;
+  
+  &-brand {
+    display: flex;
+    gap: 64px;
+  }
   &-item {
-    color: #0F0F11;
+    display: block;
+    padding: 26px 0;
+    color: #89939A;;
     font-family: 'Mont';
-font-style: normal;
-font-weight: 800;
-font-size: 12px;
-line-height: 11px;
-text-transform: uppercase;
-text-decoration: none;
-margin-right: 64px;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 12px;
+    line-height: 11px;
+    text-transform: uppercase;
+    text-decoration: none;
+
+    &:focus {
+      color: #0f0f11;
+    }
+    
+    &:focus::after{
+      
+      position: relative;
+      display: block;
+      content: '';
+      width: 100%;
+      border-bottom: 2px solid #0f0f11;
+      left: 0;
+      top: 26px;
+    
+    }
+  
   }
 }
