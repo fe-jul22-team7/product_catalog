@@ -1,0 +1,30 @@
+@import "../../utils/mixins";
+
+.navbar-phone {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    & > .navbar_pageNavLink{
+      position: relative;
+      padding: 10px 0;
+      margin-top: 22px;
+       
+    &:focus {
+      color: #0f0f11;
+    }
+    
+    &:focus::after{
+      position: absolute;      
+      display: block;
+      content: '';
+      width: 100%;
+      border-bottom: 2px solid #0f0f11;
+      left: 0;
+      bottom: 0;
+    }
+    }   
+
+  }
+ 

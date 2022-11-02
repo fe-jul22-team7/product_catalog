@@ -1,8 +1,6 @@
 .pageNavLink {
-  position: relative;
   margin: 0;
   display: block;
-  padding: 27px 0;
   color: #89939A;;
   font-family: "Montserrat", Arial, Helvetica, sans-serif;
   font-style: normal;
@@ -10,19 +8,4 @@
   font-size: 12px;
   text-transform: uppercase;
   text-decoration: none;
-
-  &:focus {
-    color: #0f0f11;
-  }
-  
-  &:focus::after{
-    position: absolute;      
-    display: block;
-    content: '';
-    width: 100%;
-    border-bottom: 2px solid #0f0f11;
-    left: 0;
-    bottom: 0;
-  }
-
 }

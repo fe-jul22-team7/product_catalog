@@ -1,17 +1,19 @@
 @import "../../utils/mixins";
 
 .header {
-  display: flex;
-  border: 1px solid #E2E6E9;
-  justify-content: space-between;
-
- 
-  &__block-logo-nav {
-    display:flex;
-   
+  
+  &__decktop {
+    display: flex;
+    border: 1px solid #E2E6E9;
+    justify-content: space-between;
   }
 
-  &__logo {
+   &__block-menu {
+    display: flex;
+    align-items:center
+   }
+
+    &__logo {
     display: block;
     margin-right: 48px;
     margin-left: 24px;
@@ -65,5 +67,47 @@
     @include onDesktop {
       display: none;        
     }
+  }
+
+  &__phone {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    
+    background: #fff;
+    transform: translateY(-100%);
+    transition: transform 0.5s; 
+   
+    &:target {
+      transform: translateY(0);
+    }
+       
+  }
+
+ 
+
+  &__block-logo-button {
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid #E2E6E9;
+  }
+
+  &__button-menu-phone {
+    padding: 20px;
+    border-left: 1px solid #E2E6E9;
+  }
+    
+  &__block-user-phone {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 250px;
+    border: 1px solid #E2E6E9;
+  }
+
+  &__user-item-phone {
+    padding: 25px 25%;
+    border-right: 1px solid #E2E6E9;
   }
 }
