@@ -1,6 +1,7 @@
+import React from 'react'
 import './Footer.scss';
 
-export const Footer = () => (
+export const Footer:React.FC = () => (
   <div className='footer'>
     <img
       src='./images/Footer-logo.png'
