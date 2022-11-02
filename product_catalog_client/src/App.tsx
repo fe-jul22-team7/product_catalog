@@ -3,11 +3,13 @@ import {
 } from 'react-router-dom';
 import './App.scss';
 import { Header } from './components/Header';
+import PageNotFound from './components/PageNotFound';
 
 import { AccessoriesPage } from './pages/AccessoriesPage';
 import { HomePage } from './pages/HomePage';
 import { PhonesPage } from './pages/PhonesPage';
 import { TabletsPage } from './pages/TabletsPage';
+
 
 export const App = () => {
   return (
@@ -35,7 +37,7 @@ export const App = () => {
 
               <Route
                 path="*"
-                element={<h1 className="title">Page not found</h1>}
+                index element={<PageNotFound />}
               />
             </Routes>
           </div>
