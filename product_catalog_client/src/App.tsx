@@ -1,6 +1,4 @@
-import {
-  Navigate, Route, Routes,
-} from 'react-router-dom';
+import { Navigate, Route, Routes } from 'react-router-dom';
 import './App.scss';
 import { Header } from './components/Header';
 import PageNotFound from './components/PageNotFound';
@@ -11,12 +9,10 @@ import { PhonesPage } from './pages/PhonesPage';
 import { TabletsPage } from './pages/TabletsPage';
 import { Footer } from './components/Footer/Footer';
 
-
 export const App = () => {
   return (
     <>
       <div data-cy="app">
-
         <Header />
         <main className="section">
           <div className="container">
@@ -36,10 +32,7 @@ export const App = () => {
                 <Route index element={<AccessoriesPage />} />
               </Route>
 
-              <Route
-                path="*"
-                index element={<PageNotFound />}
-              />
+              <Route path="*" index element={<PageNotFound />} />
             </Routes>
           </div>
         </main>
