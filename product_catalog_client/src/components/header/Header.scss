@@ -1,3 +1,9 @@
+@include onPhone {
+  .heade_mobile {
+    visibility:hidden;
+  }
+}
+
 .header {
   display: flex;
   justify-content: space-between;
