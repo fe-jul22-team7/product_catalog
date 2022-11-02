@@ -1,13 +1,11 @@
-import React from 'react';
 import './Footer.scss';
+import Logo from '../../images/logo.svg';
 
-export const Footer:React.FC = () => (
+export const Footer = () => (
   <div className='footer'>
-    <img
-      src='./images/Footer-logo.png'
-      alt="logo"
-      className='footer__logo'
-    />
+    <a href="" className='footer__logo'>
+      <img src={Logo} alt="logo"/>
+    </a>
 
     <nav className='footer__nav'>
       <ul className='footer__nav-list'>
@@ -24,4 +22,4 @@ export const Footer:React.FC = () => (
     </nav>
     <a href="#" className='footer__backToTop-btn'>Back to top</a>
   </div>
-);
+);  

@@ -22,12 +22,29 @@
   }
 
   &__logo {
+    display: block;
     width: 89px;
     height: 30px;
     margin-bottom: 32px;
 
+    &::before {
+     
+      position: relative;
+      display: block;
+      content: '';
+      width: 100%;
+      height: 15px;
+      margin-top: -10px;
+    
+      background-image: url("../../images/logo_hand.svg");
+      background-repeat: no-repeat;
+      left: 41px;
+      top: 12px;
+    }
+
     @include onTablet {
-      margin-bottom: 0px;
+      margin: 0px;
+      padding: 0;
     }
 
     @include onDesktop {
@@ -90,10 +107,7 @@
   &__nav-link {
     text-decoration: none;
     color: #89939A;
-    @font-face {
-      font-family: 'Mont-Black sans-serif';
-      src: url(../../../public/fonts/Mont/Mont-Black.woff2);
-    }
+    font-family: "Montserrat", Arial, Helvetica, sans-serif;
     font-style: normal;
     font-weight: 800;
     font-size: 12px;
@@ -107,12 +121,35 @@
     
     text-decoration: none;
     color: #89939A;
-    font-family: 'Mont';
+    font-family: "Montserrat", Arial, Helvetica, sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 12px;
     line-height: 15px;
     text-align: center;
+
+    &::after {
+      content: '';
+      display: inline-block;
+      width: 32px;
+      height: 32px;
+      border: 1px solid #B4BDC3;
+      border-radius: 50%;
+      margin-left: 16px;
+      margin-bottom: -13px;
+
+      background-image: url(../../images/Vector.svg);
+      background-repeat: no-repeat;
+      background-position: center;
+
+      @include onTablet {
+        margin-bottom: 0px;
+      }
+      
+      @include onDesktop {
+        margin-bottom: 0px;
+      }
+    }
 
     @include onTablet {
       display: flex;

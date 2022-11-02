@@ -7,7 +7,7 @@ import { AccessoriesPage } from './pages/AccessoriesPage';
 import { HomePage } from './pages/HomePage';
 import { PhonesPage } from './pages/PhonesPage';
 import { TabletsPage } from './pages/TabletsPage';
-import { Footer } from './components/footer/Footer';
+import { Footer } from './components/Footer/Footer';
 
 export const App = () => {
   return (
