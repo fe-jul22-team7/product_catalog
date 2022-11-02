@@ -5,7 +5,8 @@ import { Navbar } from './Navbar';
 export const Header = () => (
   <header
     className="header"
-  >   <a  className="header_logo">
+  >   
+    <a  className="header_logo">
       LOGO
     </a>
     <Navbar />
