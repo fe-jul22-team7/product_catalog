@@ -1,4 +1,4 @@
-import './PageNotFound.scss';
+import './PageNotFound.module.scss';
 
 export const PageNotFound: React.FC = () => {
   return (
