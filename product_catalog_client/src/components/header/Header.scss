@@ -1,0 +1,45 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #E2E6E9;
+
+
+  &_block-logo-nav {
+    display:flex;
+   
+  }
+
+  &_logo {
+    display: block;
+    margin-right: 48px;
+    margin-left: 24px;
+
+
+    &::before {
+     
+      position: relative;
+      display: block;
+      content: '';
+      width: 100%;
+      height: 15px;
+    
+      background-image: url("../../images/logo_hand.svg");
+      background-repeat: no-repeat;
+      left: 41px;
+      top: 12px;
+    }
+  }
+
+  &_block-user {
+    display:flex;
+    border-left: 1px solid #E2E6E9;
+  }
+
+  &_user-item {
+    width: 16px;
+    height: 16px;
+    padding: 24px 23px;
+    border-right: 1px solid #E2E6E9;
+  }
+}
