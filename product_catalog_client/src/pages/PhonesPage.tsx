@@ -1,7 +1,7 @@
+import { ProductCatalog } from '../components/ProductCatalog';
+
 export const PhonesPage = () => {
   return (
-    <>
-      <h1 className="title">PhonesPage</h1>
-    </>
+    <ProductCatalog />
   );
 };
