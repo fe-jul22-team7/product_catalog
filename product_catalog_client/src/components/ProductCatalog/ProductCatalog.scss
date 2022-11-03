@@ -1,0 +1,47 @@
+@import '../../utils/mixins';
+
+.phones {
+  &__cards {
+
+    display: block;
+
+    @include onTablet {
+      display: grid;
+      gap: 40px 16px;
+      grid-template-columns: repeat(2, 1fr);
+      justify-content: center;
+    }
+
+    @include onDesktop {
+      display: grid;
+      gap: 40px 16px;
+      grid-template-columns: repeat(4, 1fr);
+      justify-content: center;
+    }
+  }
+
+  &__title {
+    margin-bottom: 20px;
+    margin-top: 20px;
+    font-weight: 800;
+    font-size: 32px;
+
+    @include onTablet {
+      font-size: 48px;
+    }
+  }
+
+  &__container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 16px;
+  
+    @include onTablet {
+      padding: 0 24px;
+    }
+  
+    @include onDesktop {
+      padding: 0 32px;
+    }
+  }
+}

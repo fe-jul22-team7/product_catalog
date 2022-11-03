@@ -6,7 +6,7 @@ export const ProductCard: React.FC = () => {
     <div className="card">
       <div className="card__content">
         <img 
-          src={require('../../images/iphone.png')}
+          src={require('../../images/iphone_11.png')}
           className="card__image"
           alt="iphone"
         />

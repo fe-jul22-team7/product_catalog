@@ -1,3 +1,5 @@
+
+import { ProductCatalog } from '../components/ProductCatalog';
 import { useEffect, useState } from 'react';
 import { getPhones } from '../api/phones';
 import { Phone } from '../types/Phone';
@@ -16,8 +18,6 @@ export const PhonesPage = () => {
 
 
   return (
-    <>
-      <h1 className="title">PhonesPage</h1>
-    </>
+    <ProductCatalog />
   );
 };
