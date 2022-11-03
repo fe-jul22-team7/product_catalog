@@ -4,6 +4,15 @@
   width: 288px;
   height: 506px;
 
+  width: 272px;
+  height: 506px;
+  transition: all 300ms;
+
+  &:hover {
+    transform: scale(1.05);
+    box-shadow: 0 15px 10px -10px rgba(0, 0, 0, 0.3); 
+  }
+
   &__content {
     display: flex;
     flex-direction: column;
@@ -12,7 +21,7 @@
 
   &__image {
     margin: 0 auto;
-    height: 150px;
+    height: 180px;
     width: 150px;
     margin-bottom: 24px;
   }
@@ -92,7 +101,7 @@
     font-weight: 600;
     font-size: 14px;
     text-decoration: none;
-    background: #216CFF;
+    background: #F86800;
     border-radius: 8px;
     margin-right: 8px;
     transition: 300ms box-shadow;
@@ -114,6 +123,6 @@
   }
 
   &__heart:hover {
-    background-color: pink;
+    background-color: #476DF4;
   }
 }
