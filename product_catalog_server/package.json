@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "type": "commonjs",
   "scripts": {
     "lint": "eslint ./src --fix --color",
     "prepare": "cd .. && husky install ./product_catalog_server/.husky"
@@ -16,5 +17,9 @@
   },
   "lint-staged": {
     "*.js": "npm run lint"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "fs": "0.0.1-security"
   }
 }
