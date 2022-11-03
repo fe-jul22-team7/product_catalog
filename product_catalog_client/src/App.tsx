@@ -12,7 +12,7 @@ import { Footer } from './components/Footer/Footer';
 export const App = () => {
   return (
     <>
-      <div data-cy="app">
+      <div data-cy="app" className='page'>
         <Header />
         <main className="section">
           <div className="container">
