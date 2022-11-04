@@ -20,6 +20,6 @@ export const Footer = () => (
         </li>
       </ul>
     </nav>
-    <a href="#" className='footer__backToTop-btn'>Back to top</a>
+    <a href="#header" className='footer__backToTop-btn'>Back to top</a>
   </div>
 );  

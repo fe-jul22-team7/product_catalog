@@ -1,4 +1,4 @@
-const BASE_URL = 'https://product_catalog_server';
+const BASE_URL = 'http://localhost:8080';
 
 function wait(delay: number) {
   return new Promise(resolve => {

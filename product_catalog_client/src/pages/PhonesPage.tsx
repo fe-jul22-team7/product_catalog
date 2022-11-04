@@ -6,7 +6,7 @@ import { Phone } from '../types/Phone';
 
 
 export const PhonesPage = () => {
-  const [, setPhones] = useState<Phone[]>([]);
+  const [phones, setPhones] = useState<Phone[]>([]);
 
   useEffect(() => {
     getPhones()
@@ -16,6 +16,8 @@ export const PhonesPage = () => {
 
   }, []);
 
+  // eslint-disable-next-line no-console
+  console.log(phones);
 
   return (
     <ProductCatalog />
