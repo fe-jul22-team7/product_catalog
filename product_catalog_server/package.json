@@ -6,7 +6,8 @@
   "type": "commonjs",
   "scripts": {
     "lint": "eslint ./src --fix --color",
-    "prepare": "cd .. && husky install ./product_catalog_server/.husky"
+    "prepare": "cd .. && husky install ./product_catalog_server/.husky",
+    "start": "node src/server.js"
   },
   "author": "",
   "license": "ISC",

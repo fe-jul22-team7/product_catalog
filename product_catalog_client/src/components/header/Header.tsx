@@ -22,7 +22,7 @@ export const Header = () => {
   }
 
   return (
-    <header className="header">
+    <header className="header" id='header'>
       <div className="header__decktop">
         <div className="header__block-menu">
           <a className="header__logo">
