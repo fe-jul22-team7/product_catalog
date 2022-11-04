@@ -36,9 +36,9 @@ export const ProductCard: React.FC = () => {
           </div>
         </div>
         <div className="card__buttons">
-          <a href="/" className="card__cart">
+          <button className="card__cart">
             Add to cart
-          </a>
+          </button>
           <div 
             onClick={() => addToFavorite('test')}
             className="card__link"

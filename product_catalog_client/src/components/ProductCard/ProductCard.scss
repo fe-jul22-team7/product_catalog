@@ -116,13 +116,5 @@
     border: 1px solid #B4BDC3;
     border-radius: 50%;
     transition: 300ms border;
-
-    &:hover {
-      border: 1px solid #0F0F11;
-    }
-  }
-
-  &__heart:hover {
-    background-color: #476DF4;
   }
 }
