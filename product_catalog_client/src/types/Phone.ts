@@ -6,4 +6,7 @@ export interface Phone {
   year: number;
   capacity: string;
   color: string;
+  screen: string;
+  ram: string;
+  image: string;
 }
