@@ -49,13 +49,6 @@
     }
   }
 
-  &__user-item {
-    width: 16px;
-    height: 16px;
-    padding: 24px 23px;
-    border-right: 1px solid #E2E6E9;
-  }
-
   &__button-menu {
     display: flex;
     align-items: center;
@@ -105,9 +98,4 @@
     margin-top: 250px;
     border: 1px solid #E2E6E9;
   }
-
-  &__user-item-phone {
-    padding: 25px 25%;
-    border-right: 1px solid #E2E6E9;
-  }
-}
+ };

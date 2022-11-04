@@ -1,13 +1,14 @@
 import './Header.scss';
 import Logo from '../../images/logo.svg';
-import Favourite from '../../images/Favourite.svg';
-import Cart from '../../images/Cart.svg';
 import Menu from '../../images/Menu.svg';
 import Close from '../../images/Close.svg';
 
 
 import { NavbarDesktop } from '../NavbarDesktop';
 import { NavbarPhone } from '../NavbarPhone';
+import { NavbarUser } from '../NavbarUser';
+
+
 
 
 export const Header = () => {
@@ -35,18 +36,7 @@ export const Header = () => {
         </div>
 
         <div className="header__block-user">
-          <a className="header__favorite header__user-item">
-            <img
-              src={Favourite}
-              alt="Favourite"
-            />
-          </a>
-          <a className="header__cart header__user-item">
-            <img
-              src={Cart}
-              alt="cart"
-            />
-          </a>
+          <NavbarUser/>
         </div>
         <a href='#menu-fone' className="header__button-menu">
           <img src={Menu} alt="menu" />
@@ -74,22 +64,9 @@ export const Header = () => {
         </div>
 
         <div className="header__block-user-phone">
-          <a className="header__favorite header__user-item-phone">
-            <img
-              src={Favourite}
-              alt="Favourite"
-            />
-          </a>
-          <a className="header__cart header__user-item-phone">
-            <img
-              src={Cart}
-              alt="cart"
-            />
-          </a>
+          <NavbarUser/>
         </div>
-
       </div>
-
     </header>
   );
 };
