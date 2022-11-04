@@ -45,9 +45,9 @@ export const ProductCard: React.FC<PhoneType> = ({ phone }) => {
           </div>
         </div>
         <div className="card__buttons">
-          <button className="card__cart">
+          <div className="card__cart">
             Add to cart
-          </button>
+          </div>
           <div 
             onClick={() => addToFavorite('test')}
             className="card__link"
