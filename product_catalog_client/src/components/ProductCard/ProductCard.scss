@@ -108,6 +108,7 @@
 
     &:hover {
       box-shadow: 0px 3px 13px rgba(23, 32, 49, 0.4);
+      cursor: pointer;
     }
   }
 
@@ -116,5 +117,9 @@
     border: 1px solid #B4BDC3;
     border-radius: 50%;
     transition: 300ms border;
+
+    &:hover {
+      border: 1px solid #0F0F11;
+    }
   }
 }
