@@ -1,4 +1,4 @@
-const BASE_URL = 'http://localhost:8080';
+export const BASE_URL = 'http://localhost:8080';
 
 function wait(delay: number) {
   return new Promise(resolve => {

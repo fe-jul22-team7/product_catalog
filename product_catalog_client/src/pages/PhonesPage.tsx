@@ -1,4 +1,3 @@
-
 import { ProductCatalog } from '../components/ProductCatalog';
 import { useEffect, useState } from 'react';
 import { getPhones } from '../api/phones';
@@ -20,6 +19,6 @@ export const PhonesPage = () => {
   console.log(phones);
 
   return (
-    <ProductCatalog />
+    <ProductCatalog phones={phones}/>
   );
 };

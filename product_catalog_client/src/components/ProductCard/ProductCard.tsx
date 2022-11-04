@@ -2,37 +2,46 @@ import React from 'react';
 import './ProductCard.scss';
 import {useContext} from 'react';
 import FavoriteContext from '../../FavoriteContext';
+import { Phone } from '../../types/Phone';
+import { BASE_URL } from '../../utils/fetchClient';
 
-export const ProductCard: React.FC = () => {
+type PhoneType = {
+  phone: Phone
+};
+
+export const ProductCard: React.FC<PhoneType> = ({ phone }) => {
   const {addToFavorite} = useContext(FavoriteContext);
+  const { name, price, fullPrice, capacity, screen, ram, image } = phone;
 
+  // console.log(image);
+  
   return (
     <div className="card">
       <div className="card__content">
         <img 
-          src={require('../../images/iphone_11.png')}
+          src={`${BASE_URL}/${image}`}
           className="card__image"
           alt="iphone"
         />
         <div className="card__name">
-          Apple iPhone 11 128GB Purple (iMT9G2FS/A)
+          {name} (iMT9G2FS/A)
         </div>
         <div className="card__price">
-          <div className="card__price-new">$799</div>
-          <div className="card__price-old">$899</div>
+          <div className="card__price-new">${price}</div>
+          <div className="card__price-old">${fullPrice}</div>
         </div>
         <div className="card__characteristics">
           <div className="card__description">
             <div className="card__description-title">Screen</div>
-            <div className="card__description-value">6.2” IPS</div>
+            <div className="card__description-value">{screen}</div>
           </div>
           <div className="card__description">
             <div className="card__description-title">Capacity</div>
-            <div className="card__description-value">128 GB</div>
+            <div className="card__description-value">{capacity}</div>
           </div>
           <div className="card__description">
             <div className="card__description-title">RAM</div>
-            <div className="card__description-value">4 GB</div>
+            <div className="card__description-value">{ram}</div>
           </div>
         </div>
         <div className="card__buttons">
