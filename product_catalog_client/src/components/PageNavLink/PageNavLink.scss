@@ -9,4 +9,23 @@
     letter-spacing: 0.04em;
     text-transform: uppercase;
     text-decoration: none;
-}
+   
+      position: relative;
+      padding: 25px 0;
+       
+    &:focus,
+    &:hover {
+      color: #0f0f11;
+    }
+    
+    &:focus::after,
+    &:hover::after{
+      position: absolute;      
+      display: block;
+      content: '';
+      width: 100%;
+      border-bottom: 2px solid #0f0f11;
+      left: 0;
+      bottom: 0;
+    }
+  }   

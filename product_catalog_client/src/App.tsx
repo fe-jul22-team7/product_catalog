@@ -12,8 +12,9 @@ import { CartPage } from './pages/CartPage';
 import { Footer } from './components/Footer/Footer';
 import { FavoriteProvider } from './FavoriteContext';
 
-
 export const App = () => {
+  
+  
   return (
     <>
       <div data-cy="app" className='page'>
