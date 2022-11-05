@@ -18,17 +18,18 @@ export const NavbarUser = () => {
     > 
       <div className="navbar-user__item">
         <PageNavUserLink to="/favourite" image={Favourite} />
-        <div className="navbar-user__hard">
-          <span className="navbar-user__hard-item">
-            {items.length}
-          </span>
-        </div>
+        {items.length !== 0 && (
+          <div className="navbar-user__hard">
+            <span className="navbar-user__hard-item">
+              {items.length}
+            </span>
+          </div>
+        )}
       </div>
 
       <div className="navbar-user__item">
         <PageNavUserLink to="/cart" image={Cart} />
       </div>
-      
       
     </nav>
   );

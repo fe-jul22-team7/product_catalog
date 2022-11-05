@@ -4,9 +4,27 @@
 .page-nav-user-link {
   width: 16px;
   height: 16px;
+  padding: 24px; 
+  border-right: 1px solid #E2E6E9;
   
-  &:first-child {
-    border-right: 1px solid #E2E6E9;
+  &:hover,
+  &:focus {
+    color: #0f0f11;
   }
+
+  &:hover::after,
+  &:focus::after{
+    position: absolute;      
+    display: block;
+    content: '';
+    width: 100%;
+    border-bottom: 2px solid #0f0f11;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+  // &:first-child {
+  //   border-right: 1px solid #E2E6E9;
+  // }
   
 }

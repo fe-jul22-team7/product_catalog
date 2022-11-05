@@ -4,7 +4,7 @@
   &__cards {
 
     display: block;
-
+    
     @include onTablet {
       display: grid;
       gap: 40px 16px;
