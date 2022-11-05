@@ -24,9 +24,29 @@
     width: 40px;
     height: 40px;
     background-color: transparent;
+    cursor: pointer;
+    transition-property: background-color, color;
+    transition-duration: 300ms;
 
+    &:hover {
+      color: white;
+      background-color: black;
+    }
+   
     &:last-child {
       margin-right: 0;
     }
   }
+}
+
+.active-button {
+  display: inline-block;
+  color: #fff;
+  font-size: 14px;
+  border: 1px solid transparent;
+  border-radius: 50%;
+  text-align: center;
+  width: 40px;
+  height: 40px;
+  background-color:#0F0F11;
 }
