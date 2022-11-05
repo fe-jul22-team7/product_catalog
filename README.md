@@ -13,5 +13,6 @@
 
 - Home page
 - Phone page
+- Favourites
 ##
 4 people are currently working on this project
