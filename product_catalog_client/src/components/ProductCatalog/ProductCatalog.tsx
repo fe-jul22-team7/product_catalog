@@ -10,11 +10,15 @@ type PhonesType = {
 
 export const ProductCatalog: React.FC<PhonesType> = ({ phones }) => {
   const [currentPage, setCurrentPage] = useState(1);
-  const [phonesPerPage] = useState(16);
+  const [phonesPerPage, setPhonesPerPage] = useState(8);
 
   const lastPhoneIndex = currentPage * phonesPerPage;
   const firstPhoneIndex = lastPhoneIndex - phonesPerPage;
   const currentPhone = phones.slice(firstPhoneIndex, lastPhoneIndex);
+
+  const handleChange = (page: number) => {
+    setPhonesPerPage(page);
+  };
 
   return (
     <>
@@ -34,10 +38,13 @@ export const ProductCatalog: React.FC<PhonesType> = ({ phones }) => {
 
               <div>
                 <p className="phones__selectName">Items on page</p>
-                <select className="phones__select">
-                  <option className="phones__selectText">8</option>
-                  <option className="phones__selectText">16</option>
-                  <option className="phones__selectText">32</option>
+                <select className="phones__select"
+                  value={phonesPerPage} 
+                  onChange={event => handleChange(+event.target.value)}
+                >
+                  <option className="phones__selectText"value="8">8</option>
+                  <option className="phones__selectText" value="16">16</option>
+                  <option className="phones__selectText" value="32">32</option>
                 </select>
               </div>
             </div>
