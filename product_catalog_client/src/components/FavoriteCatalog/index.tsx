@@ -1,0 +1,1 @@
+export { FavoriteCatalog } from './FavoriteCatalog';

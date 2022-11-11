@@ -1,0 +1,48 @@
+@import "../../utils/mixins";
+
+.favorite {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 80px;  
+  font-family: "Montserrat", Arial, Helvetica, sans-serif;
+  font-style: normal;
+ 
+  &__title {
+    margin-top: 40px;
+    margin-bottom: 10px;   
+    font-weight: 800;
+    font-size: 48px;
+    letter-spacing: 0.04em;
+    color: #0F0F11;
+  }
+
+  &__count {
+    margin-bottom: 40px; 
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 21px;
+    color:#89939A;
+  }
+
+ 
+
+  
+  &__list {
+    display: block;
+    
+    @include onTablet {
+      display: grid;
+      gap: 40px 16px;
+      grid-template-columns: repeat(2, 1fr);
+      justify-content: center;
+    }
+
+    @include onDesktop {
+      display: grid;
+      gap: 40px 16px;
+      grid-template-columns: repeat(4, 1fr);
+      justify-content: center;
+    }
+  }
+}
