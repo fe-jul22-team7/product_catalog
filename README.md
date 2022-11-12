@@ -16,3 +16,4 @@
 - Favourites
 ##
 4 people are currently working on this project
+![alt text](https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.dreamstime.com%2Fphone-shop-logo-design-template-gadget-image135331058&psig=AOvVaw0bBQ2H3wU9Ljl1AldBKNZd&ust=1668370865338000&source=images&cd=vfe&ved=0CBAQjRxqFwoTCKCyhfi7qfsCFQAAAAAdAAAAABAE)
