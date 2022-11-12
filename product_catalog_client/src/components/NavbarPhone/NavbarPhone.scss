@@ -1,4 +1,4 @@
-@import "../../utils/mixins";
+@import '../../utils/mixins';
 
 .navbar-phone {
     display: flex;
@@ -6,7 +6,7 @@
     justify-content: center;
     align-items: center;
 
-    & > .navbar_pageNavLink{
+    & > .navbar_pageNavLink {
       position: relative;
       padding: 10px 0;
       margin-top: 22px;
@@ -15,8 +15,8 @@
       color: #0f0f11;
     }
     
-    &:focus::after{
-      position: absolute;      
+    &:focus::after {
+      position: absolute;
       display: block;
       content: '';
       width: 100%;
@@ -24,7 +24,5 @@
       left: 0;
       bottom: 0;
     }
-    }   
-
   }
- 
+}

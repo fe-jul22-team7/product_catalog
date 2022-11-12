@@ -3,21 +3,43 @@ import { ProductCard } from '../ProductCard/ProductCard';
 import { Phone } from '../../types/Phone';
 import { Pagination } from '../Pagination';
 import { useState } from 'react';
+import { FilterType } from '../../enums/FilterTypes';
+import { sortPhones } from '../Filter/SortPhones';
 
 type PhonesType = {
   phones: Phone[]
 };
 
+
 export const ProductCatalog: React.FC<PhonesType> = ({ phones }) => {
   const [currentPage, setCurrentPage] = useState(1);
   const [phonesPerPage, setPhonesPerPage] = useState(8);
+  const [filterType, setFilterType] = useState<FilterType>(FilterType.NEWEST);
 
-  const lastPhoneIndex = currentPage * phonesPerPage;
-  const firstPhoneIndex = lastPhoneIndex - phonesPerPage;
-  const currentPhone = phones.slice(firstPhoneIndex, lastPhoneIndex);
+  const from = currentPage * phonesPerPage;
+  const to = from - phonesPerPage;
+  const currentPhone = sortPhones(phones, filterType);
 
   const handleChange = (page: number) => {
     setPhonesPerPage(page);
+  };
+
+  const handleFilter = (value: string) => {
+    switch (value) {
+      case FilterType.ASC: {
+        setFilterType(FilterType.ASC);
+        break;
+      }
+  
+      case FilterType.OLDEST: {
+        setFilterType(FilterType.OLDEST);
+        break;
+      }
+  
+      default:
+      case FilterType.NEWEST:
+        setFilterType(FilterType.NEWEST);
+    }
   };
 
   return (
@@ -29,10 +51,24 @@ export const ProductCatalog: React.FC<PhonesType> = ({ phones }) => {
             <div className="phones__selected">
               <div>
                 <p className="phones__selectName">Sort by</p>
-                <select className="phones__select">
-                  <option className="phones__selectText">Newest</option>
-                  <option className="phones__selectText">Oldest</option>
-                  <option className="phones__selectText">By price</option>
+                <select className="phones__select"
+                  value={filterType}
+                  onChange={event => handleFilter(event.target.value)}
+                >
+                  <option 
+                    className="phones__selectText" 
+                    value={FilterType.NEWEST}
+                  > Newest
+                  </option>
+                  <option 
+                    className="phones__selectText" 
+                    value={FilterType.OLDEST}
+                  > Oldest
+                  </option>
+                  <option className="phones__selectText" 
+                    value={FilterType.ASC}
+                  >By price
+                  </option>
                 </select>
               </div>
 
@@ -49,7 +85,7 @@ export const ProductCatalog: React.FC<PhonesType> = ({ phones }) => {
               </div>
             </div>
             <div className="phones__cards">
-              {currentPhone.map(telephone => 
+              {currentPhone.slice(to, from).map(telephone => 
                 <ProductCard key={telephone.id} phone={telephone} />)
               }
             </div>

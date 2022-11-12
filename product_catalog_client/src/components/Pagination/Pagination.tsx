@@ -61,7 +61,6 @@ export const Pagination: React.FC<Props> = ({
             key={index}
             onClick={()=> pagginate(page)}>
             {page}
-            
           </button>;
         })}
         <button 

@@ -1,4 +1,4 @@
-@import "../../utils/mixins";
+@import '../../utils/mixins';
 
 .navbar-desktop {
   display: none;
@@ -9,28 +9,25 @@
   }
 
   @include onDesktop {
-    display: flex;      
+    display: flex;
   }
 
-  & > .navbar_pageNavLink{
+  & > .navbar_pageNavLink {
     position: relative;
     padding: 25px 0;
      
-  &:focus {
-    color: #0f0f11;
-  }
+    &:focus {
+      color: #0f0f11;
+    }
   
-  &:focus::after{
-    position: absolute;      
-    display: block;
-    content: '';
-    width: 100%;
-    border-bottom: 2px solid #0f0f11;
-    left: 0;
-    bottom: 0;
+    &:focus::after {
+      position: absolute;
+      display: block;
+      content: '';
+      width: 100%;
+      border-bottom: 2px solid #0f0f11;
+      left: 0;
+      bottom: 0;
+    }
   }
-  }   
 }
-
-    
- 

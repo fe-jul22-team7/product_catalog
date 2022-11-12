@@ -3,16 +3,11 @@ import Logo from '../../images/logo.svg';
 import Menu from '../../images/Menu.svg';
 import Close from '../../images/Close.svg';
 
-
 import { NavbarDesktop } from '../NavbarDesktop';
 import { NavbarPhone } from '../NavbarPhone';
 import { NavbarUser } from '../NavbarUser';
 
-
-
-
 export const Header = () => {
-  
   const menuBtn = document.querySelector('.header__button-menu');
   const menu = document.querySelector('.header__phone');
  
@@ -34,14 +29,12 @@ export const Header = () => {
           </a>
           <NavbarDesktop />
         </div>
-
         <div className="header__block-user">
           <NavbarUser/>
         </div>
         <a href='#menu-fone' className="header__button-menu">
           <img src={Menu} alt="menu" />
         </a>
-        
       </div>
    
       <div className="header__phone" id="menu-fone">
@@ -52,11 +45,9 @@ export const Header = () => {
               alt="logo"
             />
           </a>
-
           <a href='#' className="header__button-menu-phone">
             <img src={Close} alt="menu" />
           </a>
-
         </div>
 
         <div className="header__menu">
