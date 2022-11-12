@@ -29,8 +29,7 @@ export const NavbarUser = () => {
 
       <div className="navbar-user__item">
         <PageNavUserLink to="/cart" image={Cart} />
-      </div>
-      
+      </div>  
     </nav>
   );
 };

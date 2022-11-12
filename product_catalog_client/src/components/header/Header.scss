@@ -1,7 +1,6 @@
-@import "../../utils/mixins";
+@import '../../utils/mixins';
 
 .header {
-  
   &__decktop {
     display: flex;
     border: 1px solid #E2E6E9;
@@ -24,7 +23,6 @@
       content: '';
       width: 100%;
       height: 15px;
-    
       background-image: url("../../images/logo_hand.svg");
       background-repeat: no-repeat;
       left: 41px;
@@ -37,11 +35,11 @@
     display: none;
    
     @include onTablet {
-      display: flex;      
+      display: flex;
     }
 
     @include onDesktop {
-      display: flex;      
+      display: flex;
     }
   }
 
@@ -50,11 +48,11 @@
     top: 0;
     left: 0;
     width: 100%;
-    height: 100vh;    
+    height: 100vh;
     background: #fff;
     transform: translateY(-100%);
     transition: all 1s ease-out; 
-    z-index: 10;       
+    z-index: 10;
   }
 
   &__phone--visible {
@@ -76,9 +74,8 @@
       content: '';
       width: 15px;
       height: 15px;
-          background-image: url("../../images/Menu.svg");
+      background-image: url("../../images/Menu.svg");
       background-repeat: no-repeat;
-      
     }
   }
 
@@ -104,11 +101,10 @@
     padding: 16px;
    
     @include onTablet {
-      display: none;      
+      display: none;
     }
     @include onDesktop {
-      display: none;        
+      display: none;
     }
   }
-     
- };
+}
