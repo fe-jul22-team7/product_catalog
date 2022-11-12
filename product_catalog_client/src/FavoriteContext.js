@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-filename-extension */
 import { createContext, useState } from 'react';
 
 const FavoriteContext = createContext();
@@ -12,12 +13,8 @@ export function FavoriteProvider({ children }) {
       {id, name, price, fullPrice, capacity, screen, ram, image}]);
   };
   
-  // eslint-disable-next-line no-console
-  console.log(items);
-
   return (
 
-    // eslint-disable-next-line react/jsx-filename-extension
     <FavoriteContext.Provider value={{ items, addToFavorite }}>
       {children}
     </FavoriteContext.Provider>

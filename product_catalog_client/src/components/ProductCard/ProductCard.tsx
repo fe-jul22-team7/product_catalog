@@ -15,7 +15,6 @@ export const ProductCard: React.FC<PhoneType> = ({ phone }) => {
   const [isMenuCliked, setIsMenuClicked] = useState(false);
   const updateMenu = () => {
     if (!isMenuCliked) {
-      // setButtonClass('card__heart');
       setButtonClass('card__link--active');
       addToFavorite(
         id, name, price, fullPrice, capacity, screen, ram, image);
