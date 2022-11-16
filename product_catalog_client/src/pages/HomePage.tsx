@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { HomePageComponent } from '../components/HomePage';
 import { Loader } from '../components/Loader';
 
 
@@ -14,7 +15,6 @@ export const HomePage = () => {
 
   return (
     <>
-      <h1 className="title">Home Page</h1>
       <div className="block">
         <div className="box table-container">
           {isAdding && <Loader />}
@@ -35,9 +35,10 @@ export const HomePage = () => {
               There are no people on the server
             </p>
           )}
-
         </div>
       </div>
+
+      <HomePageComponent />
     </>
   );
 };
