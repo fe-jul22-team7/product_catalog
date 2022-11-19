@@ -12,7 +12,6 @@ interface Props {
 export const NavbarPhone: React.FC<Props> = ({ updateMenu }) => {
   const { items } = useContext(CartContext);
 
-
   return (
 
     <div className="navbar-phone">
@@ -84,7 +83,6 @@ export const NavbarPhone: React.FC<Props> = ({ updateMenu }) => {
               alt="Favourite"
             />
           </NavLink>
-          
         </div>
       </div>
     </div>

@@ -16,3 +16,7 @@
 - Favourites
 ##
 4 people are currently working on this project
+
+
+![image description](https://thumbs.dreamstime.com/b/phone-shop-logo-design-template-gadget-135331058.jpg)
+

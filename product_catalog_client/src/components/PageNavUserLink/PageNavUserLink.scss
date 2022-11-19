@@ -1,6 +1,5 @@
 @import "../../utils/mixins";
 
-
 .page-nav-user-link {
   width: 16px;
   height: 16px;
@@ -14,7 +13,7 @@
 
   &:hover::after,
   &:focus::after{
-    position: absolute;      
+    position: absolute;
     display: block;
     content: '';
     width: 100%;
@@ -23,5 +22,3 @@
     right: 0;
     bottom: 0;
   }
- 
-}
