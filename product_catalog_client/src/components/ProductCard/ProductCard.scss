@@ -119,6 +119,7 @@
   }
 
   &__link {
+   
     padding: 12px;
     border: 1px solid #B4BDC3;
     border-radius: 50%;
@@ -128,4 +129,31 @@
       border: 1px solid #0F0F11;
     }
   }
+
+  &__link::after {
+    
+    display: block;
+    content: '';
+    width: 15px;
+    height: 15px;
+    background-image: url("../../images/Favourite.svg");
+    background-repeat: no-repeat;
+   } 
+
+  &__link--active{
+    position: relative;
+  }
+
+  &__link--active::after {
+      position: absolute;
+      display: block;
+      content: '';
+      width: 15px;
+      height: 15px;
+      background-image: url("../../images/Favourites_blue.svg");
+      background-repeat: no-repeat;
+      right: 12px;
+      bottom: 12px;
+  }
 }
+

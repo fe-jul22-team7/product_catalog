@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-filename-extension */
 import { createContext, useState } from 'react';
 
 const FavoriteContext = createContext();
@@ -5,14 +6,16 @@ const FavoriteContext = createContext();
 export function FavoriteProvider({ children }) {
   const [items, setItems] = useState([]);
 
-  const addToFavorite = ( id ) => {
-    setItems((prevState) => [...prevState, {id}]);
+  const addToFavorite = ( 
+    id, name, price, fullPrice, capacity, screen, ram, image ) => {
+    
+    setItems((previd) => [...previd, 
+      {id, name, price, fullPrice, capacity, screen, ram, image}]);
   };
-
+  
   return (
 
-    // eslint-disable-next-line react/jsx-filename-extension
-    <FavoriteContext.Provider value={{items, addToFavorite }}>
+    <FavoriteContext.Provider value={{ items, addToFavorite }}>
       {children}
     </FavoriteContext.Provider>
   );

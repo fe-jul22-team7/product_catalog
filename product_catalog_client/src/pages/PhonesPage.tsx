@@ -15,9 +15,6 @@ export const PhonesPage = () => {
 
   }, []);
 
-  // eslint-disable-next-line no-console
-  console.log(phones);
-
   return (
     <ProductCatalog phones={phones}/>
   );
